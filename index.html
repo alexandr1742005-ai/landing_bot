@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бот для бизнеса — Снижайте неявки и возвращайте клиентов</title>
+    <title>Mbot — Бот для бизнеса</title>
     <meta name="description" content="Telegram-бот для барбершопов, салонов красоты, стоматологий и любого бизнеса с записью клиентов. Автоматические напоминания, онлайн-запись, сбор отзывов.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,10 +16,10 @@
             --bg-alt: #0a0a0a;
             --bg-card: #111111;
             --bg-card-hover: #1a1a1a;
-            --accent: #ff4800;
-            --accent-light: #ff6b2b;
-            --accent-glow: rgba(255, 72, 0, 0.25);
-            --accent-subtle: rgba(255, 72, 0, 0.06);
+            --accent: #9B1B30;
+            --accent-light: #B82E46;
+            --accent-glow: rgba(155, 27, 48, 0.25);
+            --accent-subtle: rgba(155, 27, 48, 0.06);
             --green: #00c853;
             --green-glow: rgba(0, 200, 83, 0.2);
             --red: #ff4444;
@@ -127,7 +127,7 @@
         }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(255,72,0,0.06); border: 1px solid rgba(255,72,0,0.15);
+            background: rgba(155,27,48,0.06); border: 1px solid rgba(155,27,48,0.15);
             padding: 8px 16px; border-radius: 100px;
             font-size: 0.82rem; font-weight: 500; color: var(--accent-light);
             margin-bottom: 28px; animation: fadeUp 0.6s ease;
@@ -177,7 +177,7 @@
         .ch-nm { font-weight: 700; font-size: 0.82rem; }
         .ch-st { font-size: 0.68rem; color: var(--green); }
         .ch-m {
-            background: rgba(255,72,0,0.08); border-radius: 12px 12px 12px 2px;
+            background: rgba(155,27,48,0.08); border-radius: 12px 12px 12px 2px;
             padding: 10px 12px; margin-bottom: 8px; font-size: 0.76rem; line-height: 1.5; max-width: 85%;
             animation: chatBounce 3s ease-in-out infinite;
         }
@@ -194,7 +194,7 @@
         .sect-dark { background: var(--bg-alt); }
         .sect-label {
             display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(255,72,0,0.05); border: 1px solid rgba(255,72,0,0.12);
+            background: rgba(155,27,48,0.05); border: 1px solid rgba(155,27,48,0.12);
             padding: 6px 14px; border-radius: 100px; font-size: 0.75rem; font-weight: 600;
             color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;
         }
@@ -214,11 +214,11 @@
             background: var(--bg-card); border: 1px solid var(--border); margin-bottom: 16px;
             transition: all 0.3s;
         }
-        .prob-card:hover { background: var(--bg-card-hover); border-color: rgba(255,68,68,0.15); transform: translateX(4px); }
-        .prob-icon { width: 48px; height: 48px; min-width: 48px; background: rgba(255,68,68,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+        .prob-card:hover { background: var(--bg-card-hover); border-color: rgba(155,27,48,0.15); transform: translateX(4px); }
+        .prob-icon { width: 48px; height: 48px; min-width: 48px; background: rgba(155,27,48,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
         .prob-title { font-weight: 700; margin-bottom: 2px; font-size: 0.95rem; }
         .prob-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
-        .loss-box { background: var(--bg-card); border: 1px solid rgba(255,68,68,0.1); border-radius: 12px; padding: 48px; text-align: center; }
+        .loss-box { background: var(--bg-card); border: 1px solid rgba(155,27,48,0.1); border-radius: 12px; padding: 48px; text-align: center; }
         .loss-val { font-family: var(--heading-font); font-size: 3.5rem; font-weight: 900; color: var(--red); margin: 12px 0 8px; }
         .loss-per { font-size: 0.9rem; color: var(--text-muted); }
         .loss-lbl { font-size: 1rem; color: var(--text-secondary); }
@@ -233,9 +233,9 @@
             content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
             background: var(--accent); opacity: 0; transition: opacity 0.3s;
         }
-        .feat-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); border-color: rgba(255,72,0,0.15); }
+        .feat-card:hover { background: var(--bg-card-hover); transform: translateY(-4px); border-color: rgba(155,27,48,0.15); }
         .feat-card:hover::after { opacity: 1; }
-        .feat-icon { width: 52px; height: 52px; background: rgba(255,72,0,0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
+        .feat-icon { width: 52px; height: 52px; background: rgba(155,27,48,0.08); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
         .feat-title { font-family: var(--heading-font); font-weight: 700; font-size: 1.05rem; margin-bottom: 10px; }
         .feat-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
@@ -251,10 +251,10 @@
             border-radius: 12px; padding: 24px; scroll-snap-align: start;
             transition: all 0.3s; flex-shrink: 0;
         }
-        .shot-card:hover { border-color: rgba(255,72,0,0.2); transform: translateY(-4px); }
+        .shot-card:hover { border-color: rgba(155,27,48,0.2); transform: translateY(-4px); }
         .shot-label { font-size: 0.72rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
         .shot-phone { background: #0a0a0a; border-radius: 16px; padding: 16px; min-height: 300px; }
-        .shot-m { background: rgba(255,72,0,0.06); border-radius: 10px 10px 10px 2px; padding: 10px 12px; margin-bottom: 8px; font-size: 0.73rem; line-height: 1.5; }
+        .shot-m { background: rgba(155,27,48,0.06); border-radius: 10px 10px 10px 2px; padding: 10px 12px; margin-bottom: 8px; font-size: 0.73rem; line-height: 1.5; }
         .shot-m.r { background: rgba(255,255,255,0.04); border-radius: 10px 10px 2px 10px; margin-left: 20%; }
         .shot-btns { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
         .shot-b { background: var(--accent); color: #fff; padding: 6px 10px; border-radius: 6px; font-size: 0.68rem; font-weight: 600; }
@@ -268,8 +268,8 @@
             border: 1px solid var(--border); border-radius: 8px; padding: 24px;
             transition: all 0.3s; cursor: default;
         }
-        .whom-card:hover { border-color: rgba(255,72,0,0.15); transform: translateY(-2px); background: var(--bg-card-hover); }
-        .whom-icon { width: 52px; height: 52px; min-width: 52px; background: rgba(255,72,0,0.06); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+        .whom-card:hover { border-color: rgba(155,27,48,0.15); transform: translateY(-2px); background: var(--bg-card-hover); }
+        .whom-icon { width: 52px; height: 52px; min-width: 52px; background: rgba(155,27,48,0.06); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
         .whom-name { font-family: var(--heading-font); font-weight: 700; font-size: 0.95rem; }
         .whom-desc { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
 
@@ -283,7 +283,7 @@
 
         /* ===== STEPS ===== */
         .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-top: 56px; position: relative; }
-        .steps::before { content: ''; position: absolute; top: 36px; left: 60px; right: 60px; height: 1px; background: rgba(255,72,0,0.2); }
+        .steps::before { content: ''; position: absolute; top: 36px; left: 60px; right: 60px; height: 1px; background: rgba(155,27,48,0.2); }
         .step { text-align: center; position: relative; z-index: 1; }
         .step-num {
             width: 72px; height: 72px; background: var(--bg-card); border: 2px solid var(--accent);
@@ -312,7 +312,7 @@
         /* ===== PRICING ===== */
         .price-card {
             max-width: 560px; margin: 56px auto 0; background: var(--bg-card);
-            border: 1px solid rgba(255,72,0,0.12); border-radius: 16px; padding: 56px;
+            border: 1px solid rgba(155,27,48,0.12); border-radius: 16px; padding: 56px;
             text-align: center; position: relative; overflow: hidden;
         }
         .price-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--accent); }
@@ -346,7 +346,7 @@
             color: var(--white); transition: all 0.3s;
         }
         .form-grp input::placeholder, .form-grp textarea::placeholder { color: var(--text-muted); }
-        .form-grp input:focus, .form-grp textarea:focus { border-color: var(--accent); background: rgba(255,72,0,0.03); box-shadow: 0 0 0 3px rgba(255,72,0,0.08); }
+        .form-grp input:focus, .form-grp textarea:focus { border-color: var(--accent); background: rgba(155,27,48,0.03); box-shadow: 0 0 0 3px rgba(155,27,48,0.08); }
         .form-grp textarea { resize: vertical; min-height: 90px; }
         .form-note { font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 16px; }
 
@@ -432,7 +432,7 @@
     <div class="container">
         <a href="#" class="logo">
             <div class="logo-icon">⚡</div>
-            BizBot
+            Mbot
         </a>
         <ul class="nav-links" id="navLinks">
             <li><a href="#features">Возможности</a></li>
@@ -705,7 +705,7 @@
         </div>
         <div class="price-card anim">
             <div class="price-tag">Популярный выбор</div>
-            <div class="price-val">4 500 <span>₽/мес</span></div>
+            <div class="price-val">5 000 <span>₽/мес</span></div>
             <div class="price-per">Оплата за месяц использования • Без скрытых платежей</div>
             <ul class="price-list">
                 <li><span class="ck">✓</span> Настройка под ваш бизнес</li>
@@ -749,15 +749,15 @@
     <div class="container">
         <div class="foot-grid">
             <div class="foot-brand">
-                <div class="logo" style="margin-bottom:4px;"><div class="logo-icon" style="width:28px;height:28px;font-size:0.9rem;">⚡</div> BizBot</div>
+                <div class="logo" style="margin-bottom:4px;"><div class="logo-icon" style="width:28px;height:28px;font-size:0.9rem;">⚡</div> Mbot</div>
                 <p>Помогаем бизнесу не терять клиентов и автоматически возвращать их обратно.</p>
                 <div class="foot-soc"><a href="#" title="Telegram">✈️</a><a href="#" title="WhatsApp">💬</a><a href="#" title="VK">🅱️</a></div>
             </div>
             <div class="foot-col"><h4>Навигация</h4><a href="#features">Возможности</a><a href="#screenshots">Интерфейс</a><a href="#how">Как работает</a><a href="#pricing">Цена</a></div>
             <div class="foot-col"><h4>Для кого</h4><a href="#whom">Барбершопы</a><a href="#whom">Салоны красоты</a><a href="#whom">Стоматологии</a><a href="#whom">Автосервисы</a></div>
-            <div class="foot-col"><h4>Контакты</h4><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="/cdn-cgi/l/email-protection#6a03040c052a08031008051e44181f"><span class="__cf_email__" data-cfemail="c6afa8a0a986a4afbca4a9b2e8b4b3">[email&#160;protected]</span></a><a href="#">Telegram: @bizbot_support</a></div>
+            <div class="foot-col"><h4>Контакты</h4><a href="tel:+79991234567">+7 (999) 123-45-67</a><a href="/cdn-cgi/l/email-protection#731a1d151c33111a09111c075d0106"><span class="__cf_email__" data-cfemail="aac3c4ccc5eac8c3d0c8c5de84d8df">[email&#160;protected]</span></a><a href="#">Telegram: @bizbot_support</a></div>
         </div>
-        <div class="foot-bottom"><span>© 2026 BizBot. Все права защищены.</span><a href="#">Политика конфиденциальности</a></div>
+        <div class="foot-bottom"><span>© 2026 Mbot. Все права защищены.</span><a href="#">Политика конфиденциальности</a></div>
     </div>
 </footer>
 
@@ -782,4 +782,3 @@ if(pi){pi.addEventListener('input',function(){let v=this.value.replace(/\D/g,'')
 </script>
 </body>
 </html>
-
