@@ -764,10 +764,32 @@
 <div class="toast" id="toast">✅ Заявка отправлена! Мы свяжемся с вами в ближайшее время.</div>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-e.preventDefault();const form=[e.target](http://e.target);
+// Отправка заявки — токен спрятан на сервере!
+async function handleSubmit(e) {
+    e.preventDefault();
+    const form = e.target;
+    const now = new Date().toLocaleString('ru-RU', { timeZone: 'Europe/Moscow' });
 
-document.getElementById('toast').classList.add('show');
+    const payload = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        tg: document.getElementById('tg').value,
+        biz: document.getElementById('biz').value,
+        comment: document.getElementById('comment').value,
+        time: now
+    };
 
-setTimeout(()=&gt;document.getElementById('toast').classList.remove('show'),4000);
+    try {
+        await fetch('/api/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+    } catch (err) {
+        console.error('Ошибка:', err);
+    }
 
-form.reset();
+    document.getElementById('toast').classList.add('show');
+    setTimeout(() => document.getElementById('toast').classList.remove('show'), 4000);
+    form.reset();
+}
